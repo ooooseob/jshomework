@@ -39,3 +39,10 @@ function greetUser(username) {
   return "안녕하세요! " + username + "님. 좋은 하루되세요!";
 }
 console.log(greetUser("심우섭"));
+
+//2. 원가 계산
+//판매가를 입력 받아 원가를 계산하는 함수를 작성합니다.
+const calculateOriginalPrice = function (priceWithTax) {
+  return priceWithTax / 1.033;
+};
+console.log(calculateOriginalPrice(12000));
