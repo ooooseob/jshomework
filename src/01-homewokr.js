@@ -29,3 +29,13 @@ let user_grade = "silver";
 
 //10. "버튼이 클릭되었는지 여부"를 담는 변수를 선언하고 불리언 타입 값을 설정하세요.
 let button_click = false;
+
+//-------------------------------------------------------
+//함수 작성 과제
+
+//1. 인사말 메시지
+//사용자로부터 이름을 입력받아 인사말을 출력하는 함수를 작성합니다.
+function greetUser(username) {
+  return "안녕하세요! " + username + "님. 좋은 하루되세요!";
+}
+console.log(greetUser("심우섭"));
