@@ -67,3 +67,21 @@ const getDiscountedPrice = (originalPrice, discountPercent) =>
   originalPrice - originalPrice * discountPercent;
 
 console.log(getDiscountedPrice(18700, 0.2));
+
+//5. 등급 판단
+//점수를 전달받아 점수, 등급과 설명을 포함한 객체를 반환하는 함수를 작성합니다.
+const score = (my_score) => {
+  if (90 <= my_score) {
+    return { score: my_score, grade: "A", description: "매우 우수" };
+  } else if (80 <= my_score) {
+    return { score: my_score, grade: "B", description: "우수" };
+  } else if (70 <= my_score) {
+    return { score: my_score, grade: "C", description: "보통" };
+  } else if (60 <= my_score) {
+    return { score: my_score, grade: "D", description: "미달, 통과 기준 근접" };
+  } else if (59 <= my_score) {
+    return { score: my_score, grade: "F", description: "낙제" };
+  }
+};
+
+console.log(score(87));
