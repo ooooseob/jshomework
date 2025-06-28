@@ -11,14 +11,18 @@ body {
     color: #9699ad;
   }
 }
-
+.accordion {
+  display: flex;
+  flex-flow: column;
+}
 .accordion-container {
   padding: 50px;
 
-  &.is-open {
-    .indicator {
-      rotate: 180deg;
-    }
+  &.is-open .indicator {
+    rotate: 180deg;
+  }
+  &.is-open .accordion-content {
+    display: flex;
   }
 
   .output {
@@ -57,11 +61,7 @@ body {
     }
   }
 
-  .accordion-contant {
-    &.is-open {
-      display: flex;
-    }
-
+  .accordion-content {
     display: none;
     flex-flow: column nowrap;
     margin-top: 30px;
