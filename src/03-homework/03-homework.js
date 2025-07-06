@@ -10,14 +10,12 @@
 //   content.classList.toggle("is-open");
 // });
 
-const containers = Array.from(document.querySelectorAll(".accordion-container"));
-
+const containers = Array.from(document.querySelectorAll('.accordion-container'));
 
 containers.forEach((accordion) => {
-  const button = accordion.querySelector(".accordion-header .btn");
-  
-  button.addEventListener("click", () => {
-    accordion.classList.toggle("is-open");
-  });
+  const button = accordion.querySelector('.accordion-header .btn');
 
+  button.addEventListener('click', () => {
+    accordion.classList.toggle('is-open');
+  });
 });

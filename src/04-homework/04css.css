@@ -1,0 +1,136 @@
+body {
+  .box {
+    display: flex;
+    flex-flow: row nowrap;
+
+    gap: 36px;
+    margin: 64px 88px;
+  }
+
+  #text-container {
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 617px;
+    padding-top: 64px;
+
+    .badge {
+      font-size: 16px;
+      color: #b31116;
+      font-weight: 700;
+      margin-bottom: 88px;
+      opacity: 0;
+    }
+    .headline {
+      color: #b31116;
+      font-size: 86px;
+      font-weight: 100;
+      letter-spacing: -5px;
+
+      .headline-strong {
+        font-weight: 700;
+      }
+    }
+
+    .sub-text {
+      margin: 68px 0;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    .form {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 16px;
+
+      .frontend {
+        font-size: 24px;
+        padding: 12px 36px;
+        border: 0;
+        border-radius: 50px;
+        color: white;
+        background-color: black;
+      }
+
+      .curriculum {
+        font-size: 24px;
+        padding: 12px 36px;
+        color: #b31116;
+        font-weight: 600;
+      }
+    }
+  }
+
+  #image-container {
+    min-width: 705px;
+    padding: 65px 0 65px 65px;
+    display: grid;
+    grid-template: auto / 1fr;
+    grid-template-areas:
+      '. . . . graph1'
+      '. graph2 graph2 graph3 graph4'
+      '. graph5 image1 image1 graph6'
+      'graph7 graph8 image1 image1 graph9'
+      '. graph10 graph11 graph11 graph12'
+      '. graph13 graph14 graph14 graph12'
+      '. graph15 . . .';
+
+    .graph1 {
+      grid-area: graph1;
+    }
+    .graph2 {
+      grid-area: graph2;
+      opacity: 0;
+    }
+    .graph3 {
+      grid-area: graph3;
+      opacity: 0;
+      transform: translate(-200px, -180px);
+    }
+    .graph4 {
+      grid-area: graph4;
+      opacity: 0;
+      transform: translate(160px, -120px);
+    }
+    .graph5 {
+      grid-area: graph5;
+    }
+    .image1 {
+      grid-area: image1;
+    }
+    .graph6 {
+      grid-area: graph6;
+      opacity: 0;
+    }
+    .graph7 {
+      grid-area: graph7;
+    }
+    .graph8 {
+      grid-area: graph8;
+      opacity: 0;
+    }
+    .graph9 {
+      grid-area: graph9;
+    }
+    .graph10 {
+      grid-area: graph10;
+    }
+    .graph11 {
+      grid-area: graph11;
+      transform: translateY(260px);
+      opacity: 0;
+    }
+    .graph12 {
+      grid-area: graph12;
+    }
+    .graph13 {
+      grid-area: graph13;
+    }
+    .graph14 {
+      grid-area: graph14;
+    }
+    .graph15 {
+      grid-area: graph15;
+    }
+  }
+}
